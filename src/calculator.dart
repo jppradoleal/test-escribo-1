@@ -1,8 +1,8 @@
 int sumDivisiblesByThreeAndFive(int max) {
   int sum = 0;
-  for (var i = 3; i < max; i++) {
-    if (i % 3 == 0 || i % 5 == 0) {
-      sum += i;
+  for (int num = 3; num < max; num++) {
+    if (num % 3 == 0 || num % 5 == 0) {
+      sum += num;
     }
   }
   return sum;
