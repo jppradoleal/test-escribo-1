@@ -7,8 +7,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3 🚪
-      - uses: dart-lang/setup-dart@v1.3 🎯
+      - name: Load commit 🚪
+        uses: actions/checkout@v3
+      - name: Setups Dart 🎯
+        uses: dart-lang/setup-dart@v1.3
       - name: Install dependencies 🔧
         run: dart pub get
       - name: Run tests 👩‍🔧
